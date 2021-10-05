@@ -13,9 +13,9 @@
     <body>
         <div id="app" class="flex flex-column h-full bg-black ov-hidden">
             <!-- Main Content -->
-            <section class="flex flex-grow-1 pb-96">
+            <section class="flex flex-grow-1 ov-auto">
                 <!-- Sidebar -->
-                <nav class="flex flex-column flex-16 bg-pureblack">
+                <nav class="flex flex-column flex-16 max-h-screen pb-96 bg-pureblack z-20">
                     <!-- Logo -->
                     <div class="flex ai-center p-16">
                         <span class="flex ac-center w-60p"><img src="./img/logo.svg" alt="spotify logo brand" /></span>
@@ -101,11 +101,29 @@
                     </div>
                 </nav>
                 <!-- Main -->
-                <main class="flex flex-84"></main>
+                <main class="flex flex-column flex-84">
+                    <!-- Top Navigation -->
+                    <div class="flex jc-end fixed w-100p l-0 p-16 clr-white bg-black-alpha-40 z-10">
+                        <a href="#" class="flex ai-center jc-center p-8 px-32 fsz-14 text-uppercase fw-500 bdrd-full bd-2 clr-white">Effettua l'Upgrade</a>
+                    </div>
+
+                    <!-- Main Content -->
+                    <div class="flex flex-column flex-grow-1 px-16 pb-96 ov-auto">
+                        <!-- Another Navigation 🤷‍♀️ -->
+                        <ul class="flex ai-center jc-center p-8 mt-72">
+                            <li><a href="#" class="flex ai-center relative mr-16 fsz-14 fw-500 text-uppercase clr-white linked">in evidenza</a></li>
+                            <li><a href="#" class="flex ai-center relative mr-16 fsz-14 fw-500 text-uppercase clr-gray">podcast</a></li>
+                            <li><a href="#" class="flex ai-center relative mr-16 fsz-14 fw-500 text-uppercase clr-gray">classifiche</a></li>
+                            <li><a href="#" class="flex ai-center relative mr-16 fsz-14 fw-500 text-uppercase clr-gray">generi e mood</a></li>
+                            <li><a href="#" class="flex ai-center relative mr-16 fsz-14 fw-500 text-uppercase clr-gray">nuove uscite</a></li>
+                            <li><a href="#" class="flex ai-center relative mr-16 fsz-14 fw-500 text-uppercase clr-gray">scopri</a></li>
+                        </ul>
+                    </div>
+                </main>
             </section>
 
             <!-- Action Navigation -->
-            <section class="w-100p fixed b-0 px-16 bd-top-1 bg-midblack">
+            <section class="w-100p fixed b-0 px-16 bd-top-1 bg-midblack z-90">
                 <div class="flex ai-center jc-between">
                     <!-- Fist Section -->
                     <ul class="flex ai-center">
