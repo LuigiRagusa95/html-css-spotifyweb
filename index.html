@@ -13,7 +13,46 @@
     <body>
         <div id="app" class="flex flex-column h-full bg-black ov-hidden">
             <!-- Main Content -->
-            <section class="flex flex-grow-1"></section>
+            <section class="flex flex-grow-1">
+                <!-- Sidebar -->
+                <nav class="flex flex-column flex-16 bg-pureblack">
+                    <!-- Logo -->
+                    <div class="flex ai-center p-16">
+                        <span class="flex ac-center w-60p obj-fit"><img src="./img/logo.svg" alt="spotify logo brand" /></span>
+                    </div>
+
+                    <!-- Sidebar Link -->
+                    <ul class="flex flex-column w-100p py-8">
+                        <li class="flex ai-center relative list-active">
+                            <a href="#" class="flex ai-center w-100p p-8 fsz-16 fw-700 clr-white">
+                                <span class="flex ai-center jc-center flex-shrink-0 px-16">
+                                    <img src="./img/home.svg" class="w-24 h-24" alt="img desc" />
+                                </span>
+                                <span class="flex">Home</span>
+                            </a>
+                        </li>
+                        <li class="flex ai-center relative">
+                            <a href="#" class="flex ai-center w-100p p-8 fsz-16 clr-lightgray">
+                                <span class="flex ai-center jc-center flex-shrink-0 px-16">
+                                    <img src="./img/search.svg" class="w-24 h-24" alt="img desc" />
+                                </span>
+                                <span class="flex">Search</span>
+                            </a>
+                        </li>
+                        <li class="flex ai-center relative">
+                            <a href="#" class="flex ai-center w-100p p-8 fsz-16 clr-lightgray">
+                                <span class="flex ai-center jc-center flex-shrink-0 px-16">
+                                    <img src="./img/libreria.svg" class="w-24 h-24" alt="img desc" />
+                                </span>
+                                <span class="flex">Library</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Main -->
+                <main class="flex flex-84"></main>
+            </section>
+
             <!-- Action Navigation -->
             <section class="px-16 bd-top-1 bg-midblack">
                 <div class="flex ai-center jc-between">
@@ -31,7 +70,7 @@
                     </ul>
 
                     <!-- Second Section -->
-                    <div class="flex ai-center flex-column p-track">
+                    <div class="flex ai-center flex-column flex-auto p-track">
                         <!-- Buttons -->
                         <ul class="flex ai-center p-4">
                             <li class="flex ai-center jc-center flex-shrink-0 mr-16 p-8">
@@ -52,19 +91,19 @@
                         </ul>
                         <!-- Progress Bar -->
                         <div class="flex ai-center jc-between p-4">
-                            <span class="fsz-14 clr-lightgray px-16">0:25</span>
+                            <span class="flex fsz-14 clr-lightgray px-16">0:25</span>
                             <div class="flex relative ai-center w-480 h-4 bdrd-full bg-gray">
                                 <span class="flex ai-center absolute w-33p h-100p bdrd-full bg-green"></span>
                                 <span class="flex ai-center absolute w-16 h-16 bdrd-full bg-white progress-track"></span>
                             </div>
-                            <span class="fsz-14 clr-lightgray px-16">4:35</span>
+                            <span class="flex fsz-14 clr-lightgray px-16">4:35</span>
                         </div>
                     </div>
 
                     <!-- Third Section -->
                     <ul class="flex ai-center">
                         <li class="flex ai-center clr-lightgray">
-                            <a href="#" class="flex ai-center jc-center w-24 h-24 fsz-20 mr-16"><ion-icon name="list-sharp"></ion-icon></a>
+                            <a href="#" class="flex ai-center jc-center w-24 h-24 fsz-20 mr-16"><ion-icon name="list-outline"></ion-icon></a>
                         </li>
                         <li class="flex ai-center clr-lightgray">
                             <a href="#" class="flex ai-center jc-center w-24 h-24 fsz-20 mr-16"><ion-icon name="laptop-outline"></ion-icon></a>
