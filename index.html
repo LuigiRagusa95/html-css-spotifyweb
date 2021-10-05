@@ -9,7 +9,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <div id="app" class="flex flex-column h-full bg-black ov-hidden">
@@ -21,14 +20,41 @@
                     <!-- Fist Section -->
                     <ul class="flex ai-center">
                         <li class="flex ai-center jc-center flex-shrink-0 max-w-56 obj-fit mr-16"><img src="./img/sinister.jpeg" alt="cover img" /></li>
-                        <li class="flex flex-column">
+                        <li class="flex flex-column flex-grow-1 mr-16">
                             <a href="#" class="fsz-16 fw-500 clr-white">Sinister</a>
-                            <a href="#" class="fsz-14 clr-lightgray">Artist Name</span>
+                            <a href="#" class="fsz-14 clr-lightgray">Artist Name</a>
                         </li>
-                        <li class="flex"></li>
+                        <li class="flex ai-center clr-lightgray">
+                            <a href="#" class="flex ai-center jc-center w-24 h-24 fsz-20 mr-8"><ion-icon name="heart-outline"></ion-icon></a>
+                            <a href="#" class="flex ai-center jc-center w-24 h-24 fsz-20 mr-8"><img class="w-20 h-20" src="./img/libreria.svg" /></a>
+                        </li>
                     </ul>
+
+                    <!-- Second Section -->
+                    <div class="flex ai-center flex-column">
+                        <ul class="flex ai-center">
+                            <li class="flex ai-center flex-shrink-0 mr-16 p-8">
+                                <a href="#" class="flex ai-center jc-center fsz-20 clr-white"><ion-icon name="shuffle-outline"></ion-icon></a>
+                            </li>
+                            <li class="flex ai-center flex-shrink-0 mr-16 p-8">
+                                <a href="#" class="flex ai-center jc-center fsz-20 clr-white"><ion-icon name="play-skip-back"></ion-icon></a>
+                            </li>
+                            <li class="flex ai-center flex-shrink-0 mr-16 p-8">
+                                <a href="#" class="flex ai-center jc-center fsz-20 clr-white"><ion-icon name="play"></ion-icon></a>
+                            </li>
+                            <li class="flex ai-center flex-shrink-0 mr-16 p-8">
+                                <a href="#" class="flex ai-center jc-center fsz-20 clr-white"><ion-icon name="play-skip-forward"></ion-icon></a>
+                            </li>
+                            <li class="flex ai-center flex-shrink-0 p-8">
+                                <a href="#" class="flex ai-center jc-center fsz-20 clr-white"><ion-icon name="repeat"></ion-icon></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </div>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
