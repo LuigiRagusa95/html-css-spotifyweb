@@ -13,7 +13,7 @@
     <body>
         <div id="app" class="flex flex-column h-full bg-black ov-hidden">
             <!-- Main Content -->
-            <section class="flex flex-grow-1">
+            <section class="flex flex-grow-1 pb-96">
                 <!-- Sidebar -->
                 <nav class="flex flex-column flex-16 bg-pureblack">
                     <!-- Logo -->
@@ -48,13 +48,64 @@
                             </a>
                         </li>
                     </ul>
+
+                    <!-- Sidebar Actions -->
+                    <ul class="flex flex-column w-100p py-8 clr-lightgray">
+                        <li class="flex ai-center relative">
+                            <a href="#" class="flex ai-center w-100p p-8">
+                                <div class="flex ai-center jc-center w-24 h-24 mx-16 bdrd-2 fsz-20 clr-black bg-lightgray"><ion-icon name="add"></ion-icon></div>
+                                <span class="flex">Crea playlist</span>
+                            </a>
+                        </li>
+                        <li class="flex ai-center relative">
+                            <a href="#" class="flex ai-center w-100p p-8 clr-lightgray">
+                                <div class="flex ai-center jc-center w-24 h-24 mx-16 bdrd-2 fsz-20 bg-gradient-blue-green"><ion-icon name="heart"></ion-icon></div>
+                                <span class="flex">Brani preferiti</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Sidebar Divider -->
+                    <span class="p-8"><hr /></span>
+
+                    <!-- Sidebar Playlist -->
+                    <ul class="flex flex-column flex-grow-1 w-100p py-8 fsz-14 ov-auto">
+                        <li class="flex ai-center relative">
+                            <a href="#" class="flex ai-center w-100p p-8 clr-lightgray">
+                                <span class="flex ai-center px-16">Le tue Hit estive del passato</span>
+                            </a>
+                        </li>
+                        <li class="flex ai-center relative">
+                            <a href="#" class="flex ai-center w-100p p-8 clr-lightgray">
+                                <span class="flex ai-center px-16">Discover Weekly</span>
+                            </a>
+                        </li>
+                        <li class="flex ai-center relative">
+                            <a href="#" class="flex ai-center w-100p p-8 clr-lightgray">
+                                <span class="flex ai-center px-16">Scelto dalla radio</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- User -->
+                    <div class="flex flex-column p-8">
+                        <a href="#" class="flex ai-center p-8 fsz-14 clr-lightgray">
+                            <span class="flex ai-center jc-center flex-shrink-0 w-24 h-24 p-2 clr-lightgray"><img class="w-100p h-100p" src="./img/download.svg" alt="download" /></span>
+                            <span class="px-16">Install app</span>
+                        </a>
+                        <span class="p-8"><hr /></span>
+                        <a href="#" class="flex ai-center p-8 fsz-16 clr-lightgray">
+                            <span class="flex ai-center jc-center flex-shrink-0 w-24 h-24 p-2 bdrd-full ov-hidden bg-lightgray"><img class="w-100p h-100p" src="./img/profile.svg" alt="profile" /></span>
+                            <span class="px-16 fw-700 clr-white">John Doe</span>
+                        </a>
+                    </div>
                 </nav>
                 <!-- Main -->
                 <main class="flex flex-84"></main>
             </section>
 
             <!-- Action Navigation -->
-            <section class="px-16 bd-top-1 bg-midblack">
+            <section class="w-100p fixed b-0 px-16 bd-top-1 bg-midblack">
                 <div class="flex ai-center jc-between">
                     <!-- Fist Section -->
                     <ul class="flex ai-center">
@@ -93,8 +144,9 @@
                         <div class="flex ai-center jc-between p-4">
                             <span class="flex fsz-14 clr-lightgray px-16">0:25</span>
                             <div class="flex relative ai-center w-480 h-4 bdrd-full bg-gray">
-                                <span class="flex ai-center absolute w-33p h-100p bdrd-full bg-green"></span>
-                                <span class="flex ai-center absolute w-16 h-16 bdrd-full bg-white progress-track"></span>
+                                <span class="flex ai-center absolute w-33p h-100p bdrd-full bg-green">
+                                    <span class="flex ai-center absolute w-16 h-16 bdrd-full bg-white progress-track"></span>
+                                </span>
                             </div>
                             <span class="flex fsz-14 clr-lightgray px-16">4:35</span>
                         </div>
@@ -112,8 +164,9 @@
                             <a href="#" class="flex ai-center jc-center w-24 h-24 fsz-20 mr-8"><ion-icon name="volume-high-outline"></ion-icon></a>
                             <div class="flex ai-center jc-between p-4">
                                 <div class="flex relative ai-center w-96 h-4 bdrd-full bg-gray">
-                                    <span class="flex ai-center absolute w-10p h-100p bdrd-full bg-green"></span>
-                                    <span class="flex ai-center absolute flex-shrink-0 w-16 h-16 bdrd-full bg-white progress-track"></span>
+                                    <span class="flex ai-center absolute w-10p h-100p bdrd-full bg-green">
+                                        <span class="flex ai-center absolute flex-shrink-0 w-16 h-16 bdrd-full bg-white progress-track"></span>
+                                    </span>
                                 </div>
                             </div>
                         </li>
