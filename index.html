@@ -15,14 +15,17 @@
             <!-- Main Content -->
             <section class="flex flex-grow-1 ov-auto">
                 <!-- Sidebar -->
-                <nav class="flex flex-column flex-16 h-screen pb-96 bg-pureblack z-20">
+                <nav class="flex flex-column flex-16 h-screen pb-96 bg-pureblack z-20" data-name="sidebar">
                     <!-- Logo -->
-                    <div class="flex ai-center p-16">
-                        <span class="flex ac-center w-60p"><img src="./img/logo.svg" alt="spotify logo brand" /></span>
+                    <div class="flex ai-center p-16" data-name="sidebar-logo">
+                        <span class="flex ac-center w-50p">
+                            <img src="./img/logo.svg" alt="spotify logo brand" />
+                            <img class="none" src="./img/logo-small.svg" alt="spotify logo brand" />
+                        </span>
                     </div>
 
                     <!-- Sidebar Link -->
-                    <ul class="flex flex-column w-100p py-8">
+                    <ul class="flex flex-column w-100p py-8" data-name="sidebar-list">
                         <li class="flex ai-center relative list-active">
                             <a href="#" class="flex ai-center w-100p p-8 fsz-16 fw-700 clr-white clr-white-hover">
                                 <span class="flex ai-center jc-center flex-shrink-0 px-16">
@@ -50,26 +53,26 @@
                     </ul>
 
                     <!-- Sidebar Actions -->
-                    <ul class="flex flex-column w-100p py-8 clr-lightgray">
-                        <li class="flex ai-center relative">
+                    <ul class="flex flex-column w-100p py-8 clr-lightgray" data-name="sidebar-actions">
+                        <li class="flex ai-center relative clr-white-hover">
                             <a href="#" class="flex ai-center w-100p p-8">
-                                <div class="flex ai-center jc-center w-24 h-24 mx-16 bdrd-2 fsz-20 clr-black bg-lightgray clr-white-hover"><ion-icon name="add"></ion-icon></div>
+                                <div class="flex ai-center jc-center w-24 h-24 mx-16 bdrd-2 fsz-20 clr-black bg-lightgray"><ion-icon name="add"></ion-icon></div>
                                 <span class="flex">Crea playlist</span>
                             </a>
                         </li>
                         <li class="flex ai-center relative">
-                            <a href="#" class="flex ai-center w-100p p-8 clr-lightgray clr-white-hover">
+                            <a href="#" class="flex ai-center w-100p p-8 clr-lightgray">
                                 <div class="flex ai-center jc-center w-24 h-24 mx-16 bdrd-2 fsz-20 bg-gradient-blue-green"><ion-icon name="heart"></ion-icon></div>
-                                <span class="flex">Brani preferiti</span>
+                                <span class="flex clr-white-hover">Brani preferiti</span>
                             </a>
                         </li>
                     </ul>
 
                     <!-- Sidebar Divider -->
-                    <span class="p-8"><hr /></span>
+                    <span class="p-8" data-name="divider"><hr /></span>
 
                     <!-- Sidebar Playlist -->
-                    <ul class="flex flex-column flex-grow-1 w-100p py-8 fsz-14 ov-auto">
+                    <ul class="flex flex-column flex-grow-1 w-100p py-8 fsz-14 ov-auto" data-name="sidebar-playlist">
                         <li class="flex ai-center relative">
                             <a href="#" class="flex ai-center w-100p p-8 clr-lightgray clr-white-hover">
                                 <span class="flex ai-center px-16">Le tue Hit estive del passato</span>
@@ -88,12 +91,12 @@
                     </ul>
 
                     <!-- User -->
-                    <div class="flex flex-column p-8">
+                    <div class="flex flex-column p-8" data-name="sidebar-user">
                         <a href="#" class="flex ai-center p-8 fsz-14 clr-lightgray clr-white-hover">
                             <span class="flex ai-center jc-center flex-shrink-0 w-24 h-24 fsz-20 ml-8 mr-16 clr-lightgray obj-fit"><ion-icon name="arrow-down-circle-outline"></ion-icon></span>
                             <span class="">Install app</span>
                         </a>
-                        <span class="p-8"><hr /></span>
+                        <span class="p-8" data-name="divider"><hr /></span>
                         <a href="#" class="flex ai-center p-8 fsz-16 clr-lightgray clr-white-hover">
                             <span class="flex ai-center jc-center flex-shrink-0 w-24 h-24 ml-8 mr-16 p-2 bdrd-full ov-hidden bg-lightgray"><img src="./img/profile.svg" alt="profile" /></span>
                             <span class="fw-700 clr-white">John Doe</span>
@@ -110,7 +113,7 @@
                     <!-- Main Content -->
                     <div class="flex flex-column flex-grow-1 px-16 pb-96 ov-auto">
                         <!-- Another Navigation 🤷‍♀️ -->
-                        <ul class="flex ai-center jc-center p-8 mt-72">
+                        <ul class="flex ai-center jc-center p-8 mt-72" data-name="another-navigation">
                             <li><a href="#" class="flex ai-center relative mr-16 fsz-14 fw-500 text-uppercase clr-white linked linked-active">in evidenza</a></li>
                             <li><a href="#" class="flex ai-center relative mr-16 fsz-14 fw-500 text-uppercase clr-gray linked">podcast</a></li>
                             <li><a href="#" class="flex ai-center relative mr-16 fsz-14 fw-500 text-uppercase clr-gray linked">classifiche</a></li>
@@ -119,7 +122,7 @@
                             <li><a href="#" class="flex ai-center relative mr-16 fsz-14 fw-500 text-uppercase clr-gray linked">scopri</a></li>
                         </ul>
                         <!-- Playlist  -->
-                        <div class="flex jc-center flex-column py-16">
+                        <div class="flex jc-center flex-column py-16" data-name="playlist-navigation">
                             <h2 class="fsz-24 py-4 clr-white fw-700">Recently Played</h2>
                             <ul class="flex flex-wrap w-100p py-4">
                                 <li class="flex flex-column text-center m-8 max-w-256">
@@ -155,7 +158,7 @@
                             </ul>
                         </div>
                         <!-- Daily  -->
-                        <div class="flex jc-center flex-column py-16">
+                        <div class="flex jc-center flex-column py-16" data-name="daily-navigation">
                             <h2 class="py-4 fsz-24 fw-700 clr-white">Recently Played</h2>
                             <h4 class="py-4 fsz-14 fw-500 clr-lightgray">Più ascolti, più accurati saranno i suggerimenti.</h4>
                             <ul class="flex flex-wrap w-100p py-4">
@@ -170,7 +173,7 @@
                             </ul>
                         </div>
                         <!-- Author -->
-                        <div class="flex jc-center flex-column py-16">
+                        <div class="flex jc-center flex-column py-16" data-name="author-navigation">
                             <h2 class="py-4 fsz-24 fw-700 clr-white">Artisti più popolari</h2>
                             <h4 class="py-4 fsz-14 fw-500 clr-lightgray">Più ascolti, più accurati saranno i suggerimenti.</h4>
                             <ul class="flex flex-wrap w-100p py-4">
@@ -190,9 +193,9 @@
 
             <!-- Action Navigation -->
             <section class="w-100p fixed b-0 px-16 bd-top-1 bg-midblack z-90">
-                <div class="flex ai-center jc-between">
+                <div class="flex ai-center jc-between" data-name="action-navigation">
                     <!-- Fist Section -->
-                    <ul class="flex ai-center">
+                    <ul class="flex ai-center" data-name="action-block-1">
                         <li class="flex ai-center jc-center flex-shrink-0 max-w-56 obj-fit mr-16"><img src="./img/sinister.jpeg" alt="cover img" /></li>
                         <li class="flex flex-column flex-grow-1 mr-16">
                             <a href="#" class="fsz-16 fw-500 clr-white">Sinister</a>
@@ -205,7 +208,7 @@
                     </ul>
 
                     <!-- Second Section -->
-                    <div class="flex ai-center flex-column flex-auto p-track">
+                    <div class="flex ai-center flex-column flex-auto p-track" data-name="action-block-2">
                         <!-- Buttons -->
                         <ul class="flex ai-center p-4">
                             <li class="flex ai-center jc-center flex-shrink-0 mr-16 p-8">
@@ -226,10 +229,10 @@
                         </ul>
 
                         <!-- Progress Bar -->
-                        <div class="flex ai-center jc-between p-4">
+                        <div class="flex ai-center jc-between p-4" data-name="progress-component">
                             <span class="flex fsz-14 clr-lightgray px-16">0:25</span>
                             <div class="flex relative ai-center w-480 h-4 bdrd-full bg-gray cup track-hover">
-                                <span class="flex ai-center absolute w-33p h-100p bdrd-full bg-green">
+                                <span class="flex ai-center absolute w-33p h-100p bdrd-full bg-lightgray">
                                     <span class="flex ai-center absolute w-16 h-16 bdrd-full bg-white transition progress-track"></span>
                                 </span>
                             </div>
@@ -238,7 +241,7 @@
                     </div>
 
                     <!-- Third Section -->
-                    <ul class="flex ai-center">
+                    <ul class="flex ai-center" data-name="action-block-3">
                         <li class="flex ai-center clr-lightgray clr-white-hover">
                             <a href="#" class="flex ai-center jc-center w-24 h-24 fsz-20 mr-16"><ion-icon name="list-outline"></ion-icon></a>
                         </li>
@@ -249,7 +252,7 @@
                             <a href="#" class="flex ai-center jc-center w-24 h-24 fsz-20 mr-8"><ion-icon name="volume-high-outline"></ion-icon></a>
                             <div class="flex ai-center jc-between p-4">
                                 <div class="flex relative ai-center w-96 h-4 bdrd-full bg-gray cup track-hover">
-                                    <span class="flex ai-center absolute w-10p h-100p bdrd-full bg-green">
+                                    <span class="flex ai-center absolute w-10p h-100p bdrd-full bg-lightgray">
                                         <span class="flex ai-center absolute flex-shrink-0 w-16 h-16 bdrd-full bg-white progress-track"></span>
                                     </span>
                                 </div>
