@@ -25,9 +25,7 @@ html { font-size: 16px; font-family: 'Inter', sans-serif; }
 .flex-shrink-0 { flex-shrink: 0; }
 .flex-row { flex-direction: row; }
 .flex-column { flex-direction: column; }
-
 .flex-wrap { flex-wrap: wrap; }
-
 .flex-auto { flex: 1 1 auto; }
 .flex-0 { flex: auto; }
 .flex-1 { flex: 1; }
@@ -192,7 +190,6 @@ html { font-size: 16px; font-family: 'Inter', sans-serif; }
     /* Sidebar */
     [data-name="sidebar"] { flex: auto; }
 
-
     /* Action Bar */
     [data-name="action-block-1"] li:nth-child(2), [data-name="action-block-1"] li:nth-child(3) { display: none; }
     [data-name="action-block-1"] li:first-of-type { width: 3.5rem; height: 3.5rem; margin: 0; }
@@ -235,14 +232,11 @@ html { font-size: 16px; font-family: 'Inter', sans-serif; }
             height: 1.5rem;
             flex-shrink: 0;
         }
-        
-        [data-name="sidebar-logo"] > span > img:first-of-type {
-            display: none;
-        }
-        [data-name="sidebar-list"] > li > a span:last-of-type {
-            display: none;
-        }
+        [data-name="sidebar-logo"] > span > img:first-of-type { display: none; }
+
+        [data-name="sidebar-list"] > li > a span:last-of-type { display: none; }
         [data-name="sidebar-list"] > li > a { align-items: center; justify-content: center; }
+
         [data-name="sidebar-user"] { flex-grow: 1; align-items: center; justify-content: end; }
         [data-name="sidebar-user"] [data-name="divider"] { display: none; }
         [data-name="sidebar-user"] > a span:last-of-type { display: none; }
@@ -292,7 +286,6 @@ html { font-size: 16px; font-family: 'Inter', sans-serif; }
      [data-name="playlist-navigation"] h2, [data-name="daily-navigation"] h2, [data-name="author-navigation"] h2 { text-align: center; }
      [data-name="playlist-navigation"] h4, [data-name="daily-navigation"] h4, [data-name="author-navigation"] h4 { text-align: center; margin-bottom: 0.5rem; }
      [data-name="playlist-navigation"] li, [data-name="daily-navigation"] li, [data-name="author-navigation"] li { width: calc(100% / 3); }
-     
 }
 
  @media screen and (max-width: 320px) { 
